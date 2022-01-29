@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+
+}
+
+.main{
+    width: 50%;
+    margin: 50px auto;
+    color: #fff;    
+}
+
+.card {
+   margin-left: auto;
+}
+
+.showcase{
+    margin-top: 20px;
+}
+
+.group{
+    margin-bottom: 20px;
+}
+
+.group label{
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.group input{
+    margin-top: 10px;
+    width: 50%;
+    height: 30px;
+    padding: 10px;
+    // border-radius: ;
+}
+
+.showcase button{
+    margin-top: 20px;
+    width: 50%;
+}
+

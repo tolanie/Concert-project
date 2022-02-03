@@ -1,48 +1,90 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #000;
-
-}
-
-.main{
-    width: 50%;
-    margin: 50px auto;
-    color: #fff;    
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(../src/img/background.jpg);
 }
 
 .card {
-   margin-left: auto;
+  background-color: rgba(255, 255, 255, 0.068);
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  border-radius: 30px;
 }
 
-.showcase{
-    margin-top: 20px;
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
 }
 
-.group{
-    margin-bottom: 20px;
+.show p{
+    text-align: center;
 }
 
-.group label{
-    display: block;
-    font-size: 30px;
-    font-weight: 700;
+.showcase {
+  margin-top: 20px;
+  width: 90%;
 }
 
-.group input{
-    margin-top: 10px;
-    width: 50%;
-    height: 30px;
-    padding: 10px;
-    // border-radius: ;
+.group {
+  margin-bottom: 20px;
 }
 
-.showcase button{
-    margin-top: 20px;
-    width: 50%;
+.group label {
+  display: block;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.group input {
+  margin-top: 10px;
+  padding: 13px 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.group input::placeholder {
+  font-size: 16px;
+}
+
+.group input:focus {
+  border: none;
+  outline: none;
+}
+
+.showcase button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 13px;
+  border-radius: 20px;
+}
+
+@media (max-width: 500px) {
+
+    .card{
+        width: 93vw;
+        padding: 4rem 1.5rem;
+    }
+
+  .main {
+    width: 100%;
+      }
+
+  .showcase{
+      width: 100%;
+  }
+
 }
 

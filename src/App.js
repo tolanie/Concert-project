@@ -14,8 +14,8 @@ function App() {
 
   const paymentOption = [
     { type: "Regular", price: "2000" },
-    { type: "VIP", price: "10000" },
-    { type: "VVIP", price: "20000" },
+    { type: "VIP", price: "5000" },
+    // { type: "VVIP", price: "20000" },
   ];
 
   const config = {

@@ -62,7 +62,7 @@ function App() {
   };
 
   const config = {
-    public_key: "FLWPUBK-6c22bb36e48a919db211777df257a762-X", //"FLWPUBK_TEST-94cc9257f32ea519c9f2012d9c7290c7-X",
+    public_key: process.env.P_KEY,
     amount: price,
     currency: "NGN",
     customer: {

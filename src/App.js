@@ -22,7 +22,7 @@ function App() {
   });
 
   const paymentOption = [
-    { type: "Regular", price: 10 },
+    { type: "Regular", price: 2000 },
     { type: "VIP", price: 5000 },
   ];
 

@@ -89,11 +89,11 @@ body {
 .payment-type {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .payment-type button {
-  width: 30%;
+  width: 42%;
   margin-top: 10px;
   border-radius: 3px;
   border: none;
@@ -101,8 +101,7 @@ body {
 }
 
 .payment-type button.active {
-  font-weight: 900;
-  background-color: rgb(179, 170, 170);
+  background-color: rgb(156, 148, 148);
   transform: scale(1.13);
 }
 
@@ -113,6 +112,49 @@ p.error {
   background-color: rgba(255, 0, 0, 0.089);
   color: red;
   font-size: 0.95rem;
+}
+
+.paymentCard {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+  max-width: 400px;
+  border: 1px solid rgb(177, 174, 174);
+  padding: 3rem 1rem;
+  border-radius: 0.4rem;
+  box-shadow: 1px 1px 9px 0px gray;
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  background-color: white;
+  z-index: 9999;
+}
+
+.paymentCard h1 {
+  font-size: 1.5rem;
+}
+
+.paymentCard img {
+  width: 60px;
+  height: 60px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.paymentCard button {
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+  width: 60%;
+  color: white;
+  border-radius: 1.5rem;
+  background-color: black;
+  border: none;
+}
+
+.site-dark {
+  opacity: 0.07;
 }
 
 @media (max-width: 500px) {
@@ -128,5 +170,17 @@ p.error {
 
   .showcase {
     width: 100%;
+  }
+
+  .paymentCard {
+    max-width: 90%;
+    border: 1px solid rgb(177, 174, 174);
+    padding: 3rem 1rem;
+    border-radius: 0.4rem;
+    box-shadow: 1px 1px 9px 0px gray;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    background-color: white;
   }
 }
